@@ -1,0 +1,29 @@
+.form {
+  background-color: hsl(219, 20%, 17%);
+  border-radius: 25px;
+}
+
+.form_legend {
+  color: hsl(0, 0%, 100%);
+}
+
+.form_text {
+  color: hsl(217, 12%, 63%);
+  line-height: 1.5;
+}
+
+.form_legend {
+  font-size: 2rem;
+}
+
+.img_wrapper {
+  border-radius: 50%;
+  background-color: hsl(213, 19%, 18%);
+  position: relative;
+}
+
+.star_icon {
+  position: absolute;
+  top: 13px;
+  left: 14px;
+}

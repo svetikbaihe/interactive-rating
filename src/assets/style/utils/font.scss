@@ -1,0 +1,42 @@
+$step: 2px;
+
+$sizes: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 40, 50, 60, 70, 80, 90, 100, 200, 300;
+
+@each $size in $sizes {
+  .font-s-#{$size} {
+    font-size: $step * $size;
+  }
+}
+
+$step-r: 1rem;
+
+$sizes-r: 1, 2, 3, 4, 5;
+
+@each $size-r in $sizes-r {
+  .font-s-rem-#{$size-r} {
+    font-size: $step-r * $size-r;
+  }
+}
+
+$step-em: 1em;
+
+$sizes-em: 1, 2, 3, 4, 5;
+
+@each $size-em in $sizes-em {
+  .fs-em-#{$size-em} {
+    font-size: $step-em * $size-em;
+  }
+}
+
+$step-em: 1em;
+
+$sizes-em: 1, 2, 3, 4, 5;
+
+$weight: 100, 200, 300, 400, 500, 600, 700, 800, 900;
+
+@each $val in $weight {
+  .font-w-#{$val} {
+    font-weight: $val;
+  }
+}
+// 100: Thin, 200: Extra Light, 300: Light, 400: Normal (Regular), 500: Medium, 600: Semi Bold, 700: Bold, 800: Extra Bold, 900: Black (Heavy)

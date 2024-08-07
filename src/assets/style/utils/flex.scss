@@ -1,0 +1,66 @@
+$display: block, inline-block, flex, inline-flex, none;
+$justify: flex-start, flex-end, space-between, center, start, end;
+$flex-directions: row, row-reverse, column, column-reverse;
+$align-items: center, flex-start, flex-end, start, end;
+$align-self: end, start, flex-end, flex-start, stretch, center;
+$align-content: center, start, end, flex-end, flex-start;
+$flex-wrap: wrap, nowrap;
+$flex: auto, 1, 2;
+
+@each $dis in $display {
+  .d-#{$dis} {
+    display: $dis;
+  }
+}
+// d-flex d-block, d-inline-block, d-inline-flex d-none
+
+@each $jus in $justify {
+  .f-just-content-#{$jus} {
+    justify-content: $jus;
+  }
+}
+// f-just-content-center f-just-content-space-around f-just-content-flex-start f-just-content-flex-end -just-content-start f-just-content-end f-just-content-space-between
+
+@each $align in $align-content {
+  .f-ac-#{$align} {
+    align-content: $align;
+  }
+}
+// f-ac-center f-ac-space-around f-ac-flex-start f-ac-flex-end f-ac-space-between f-ac-stretch f-ac-space-evenly
+
+@each $direction in $flex-directions {
+  .flex-direction-#{$direction} {
+    flex-direction: $direction;
+  }
+}
+// flex-direction-row flex-direction-row-reverse flex-direction-column flex-direction-column-reverse
+
+@each $align in $align-items {
+  .f-align-items-#{$align} {
+    align-items: $align;
+  }
+}
+// f-align-items-center f-align-items-flex-start f-align-items-flex-end f-align-items-start f-align-items-end
+
+@each $self in $align-self {
+  .f-as-#{$self} {
+    align-self: $self;
+  }
+}
+// f-as-start f-as-end f-as-flex-start f-as-flex-end f-as-center f-as-stretch
+
+@each $wrap in $flex-wrap {
+  .flex-wrap-#{$wrap} {
+    flex-wrap: $wrap;
+  }
+}
+// flex-wrap-wrap flex-wrap-nowrap
+
+@each $val in $flex {
+  .flex-#{$val} {
+    flex: $val;
+  }
+}
+// flex-1 flex-2 flex-auto
+
+

@@ -1,0 +1,70 @@
+$display: block, inline-block, grid, inline-grid, none;
+$just-content: start, end, space-between, space-around, center, stretch, space-evenly;
+$align-content: start, end, space-between, space-around, center, stretch, space-evenly;
+$just-items: start, end, center, stretch;
+$align-items: center, start, end, stretch;
+$align-self: center, start, end, stretch;
+$justify-self: center, start, end, stretch;
+$grid-flow: row, column, dense;
+
+@each $dis in $display {
+  .d-#{$dis} {
+    display: $dis;
+  }
+}
+// d-grid d-inline-grid d-none d-block d-inline-block
+
+@each $jus in $just-items {
+  .g-just-items-#{$jus} {
+    justify-items: $jus;
+  }
+}
+// g-just-items-start g-just-items-end g-just-items-center g-just-items-stretch
+
+@each $jus in $just-content {
+  .g-just-content-#{$jus} {
+    justify-content: $jus;
+  }
+}
+// g-just-content-center g-just-content-space-around g-just-content-start g-just-content-end g-just-content-space-between g-just-content-stretch g-just-content-space-evenly
+
+@each $align in $align-items {
+  .grid-ai-#{$align} {
+    align-items: $align;
+  }
+}
+// grid-ai-center grid-ai-start grid-ai-end grid-ai-stretch
+
+@each $align in $align-content {
+  .grid-ac-#{$align} {
+    align-content: $align;
+  }
+}
+// grid-ac-center grid-ac-space-around grid-ac-start grid-ac-end grid-ac-space-between grid-ac-stretch grid-ac-space-evenly
+
+@each $self in $align-self {
+  .grid-as-#{$self} {
+    align-self: $self;
+  }
+}
+// grid-as-start grid-as-end grid-as-center grid-as-stretch
+
+@each $self in $justify-self {
+  .grid-js-#{$self} {
+    justify-self: $self;
+  }
+}
+// grid-js-start grid-js-end grid-js-center grid-js-stretch
+
+@each $flow in $grid-flow {
+  .grid-auto-#{$flow} {
+    grid-auto-flow: $flow;
+  }
+}
+// grid-flow-row grid-flow-column grid-flow-dense
+
+
+
+
+
+

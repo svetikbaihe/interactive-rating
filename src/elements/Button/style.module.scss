@@ -1,0 +1,10 @@
+.button {
+  border-radius: 24px;
+  background-color: hsl(25, 97%, 53%);
+  font-weight: 700;
+  letter-spacing: 1.3px;
+
+  &:hover {
+    background-color: hsl(0, 0%, 100%);
+  }
+}

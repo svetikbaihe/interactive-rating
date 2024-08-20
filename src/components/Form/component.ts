@@ -73,7 +73,7 @@ class Form implements FormInterface {
       styles.star_icon
     ].join(' ');
 
-    $starIcon.setAttribute('src', 'src/assets/icons/icon-star.svg');
+    $starIcon.setAttribute('src', '/icons/icon-star.svg');
     
     $imgWrapper.appendChild($starIcon);
 

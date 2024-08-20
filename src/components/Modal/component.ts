@@ -108,7 +108,7 @@ class Modal implements ModalInterface {
       'width-84'
     ].join(' ');
 
-    $titleImg.setAttribute('src', 'src/assets/icons/illustration-thank-you.svg');
+    $titleImg.setAttribute('src', '/icons/illustration-thank-you.svg');
 
     const $modalSubTitle = document.createElement('h2');
 

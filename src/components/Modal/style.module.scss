@@ -1,33 +1,27 @@
 .overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1;
+  @apply fixed top-0 left-0 z-[1] flex justify-center	w-full h-full;
 }
 
 .modal {
-  background-color: hsl(218, 19%, 17%);
-  border-radius: 25px;
-  z-index: 2;
-  position: absolute;
+  @apply bg-very-dark-blue rounded-[25px] z-[2] absolute min-w-[32.8rem] py-[3em] px-[2.4em] flex flex-col items-center gap-[1.1em] left-2/4 top-2/4 translate-y-[-50%] translate-x-[-50%] md:max-w-[41.2rem] md:p-[3.2em] md:p-[3.5em];
 }
 
 .modal_sub_title {
-  background-color: hsl(216, 17%, 23%);
-  border-radius: 24px;
-  text-align: center;
-  font-size: 0.9rem;
-  color: hsl(25, 97%, 53%);
+  @apply bg-dark-blue rounded-[24px] text-center text-[1.4rem] text-orange py-[0.3em] px-[0.8em] md:px-[1.7em];
+}
+
+.modal_title_wrapper {
+  @apply flex flex-col gap-[2em] items-center;
 }
 
 .modal_title {
-  font-size: 2rem;
-  color: hsl(0, 0%, 100%);
-  text-align: center;
+  @apply text-[2.4rem] text-white text-center;
 }
 
 .modal_body {
-  text-align: center;
-  line-height: 1.5;
-  color: hsl(217, 12%, 63%);
+  @apply text-center leading-[2.5rem] text-light-grey text-[1.4rem];
+}
+
+.title_img {
+  @apply w-[148px];
 }

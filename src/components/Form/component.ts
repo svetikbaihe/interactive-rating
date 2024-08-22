@@ -39,11 +39,7 @@ class Form implements FormInterface {
     const $form = document.createElement('form');
 
     $form.className = [
-      styles.form,
-      'maxwd-208',
-      'maxhg-208',
-      'padd-18',
-      'marg-t-60'
+      styles.form
     ].join(' ');
 
     $form.addEventListener('submit', e => {
@@ -53,18 +49,13 @@ class Form implements FormInterface {
     const $fieldset = document.createElement('fieldset');
 
     $fieldset.className = [
-      styles.fieldset,
-      'd-flex',
-      'flex-direction-column', 
-      'gap-15'
+      styles.fieldset
     ].join(' ');
 
     const $imgWrapper = document.createElement('div');
 
     $imgWrapper.className = [
-      styles.img_wrapper,
-      'width-22',
-      'height-22'
+      styles.img_wrapper
     ].join(' ');
 
     const $starIcon = document.createElement('img');
@@ -90,10 +81,7 @@ class Form implements FormInterface {
     const $textSectionWrapper = document.createElement('div');
 
     $textSectionWrapper.className = [
-      styles.text_section_wrapper,
-      'd-flex',
-      'flex-direction-column', 
-      'gap-10'
+      styles.text_section_wrapper
     ].join(' ');
 
     const $formLegend = document.createElement('legend');
@@ -126,10 +114,7 @@ class Form implements FormInterface {
     const $ratingSectionWrapper = document.createElement('div');
 
     $ratingSectionWrapper.className = [
-      styles.rating_section_wrapper,
-      'd-flex',
-      'flex-direction-column', 
-      'gap-15'
+      styles.rating_section_wrapper
     ].join(' ');
 
     const $submitBtn = new Button({

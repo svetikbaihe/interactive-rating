@@ -1,6 +1,38 @@
-@import './assets/style/utils/flex.scss';
-@import './assets/style/utils/font.scss';
-@import './assets/style/utils/grid.scss';
-@import './assets/style/utils/reset.scss';
-@import './assets/style/utils/sizes.scss';
-@import './assets/style/utils/space.scss';
+// @import './assets/style/utils/flex.scss';
+// @import './assets/style/utils/font.scss';
+// @import './assets/style/utils/grid.scss';
+// @import './assets/style/utils/reset.scss';
+// @import './assets/style/utils/sizes.scss';
+// @import './assets/style/utils/space.scss';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: 'Overpass';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(/fonts/Overpass-VariableFont_wght.ttf) format('truetype');
+  }
+
+  @font-face {
+    font-family: 'Overpass';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(/fonts/Overpass-VariableFont_wght.ttf) format('truetype');
+  }
+
+  html,body,#app {
+    height: 100%;
+	  width: 100%;
+    -ms-text-size-adjust: 100%;
+	  -moz-text-size-adjust: 100%;
+	  -webkit-text-size-adjust: 100%;
+    font-size: 10px;
+    font-family: 'Overpass', sans-serif;
+  }
+}

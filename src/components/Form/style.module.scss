@@ -1,29 +1,31 @@
 .form {
-  background-color: hsl(219, 20%, 17%);
-  border-radius: 25px;
+  @apply max-w-[32.8rem] bg-very-dark-blue px-[2.4em] pt-[2.4em] pb-[3.3em] rounded-[25px] md:max-w-[41.2rem] md:p-[3.2em];
+}
+
+.fieldset {
+  @apply flex gap-[1.5em] flex-col md:gap-[2em];
 }
 
 .form_legend {
-  color: hsl(0, 0%, 100%);
+  @apply text-white text-[2.4rem];
 }
 
 .form_text {
-  color: hsl(217, 12%, 63%);
-  line-height: 1.5;
-}
-
-.form_legend {
-  font-size: 2rem;
+  @apply text-light-grey text-[1.4rem] md:text-[1.5rem];
 }
 
 .img_wrapper {
-  border-radius: 50%;
-  background-color: hsl(213, 19%, 18%);
-  position: relative;
+  @apply w-[43px] h-[43px] rounded-full bg-dark-blue relative md:w-[50px] md:h-[50px];
 }
 
 .star_icon {
-  position: absolute;
-  top: 13px;
-  left: 14px;
+  @apply absolute top-[13px] left-[14px] md:top-[16px] md:left-[17px];
+}
+
+.text_section_wrapper {
+  @apply flex flex-col gap-[1.3em];
+}
+
+.rating_section_wrapper {
+  @apply flex flex-col gap-[2em] items-center md:gap-[3em];
 }

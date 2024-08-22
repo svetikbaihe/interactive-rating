@@ -26,9 +26,9 @@ class Container implements ContainerInterface {
 
     $container.className = [
       styles.container,
-      'hg-100vh',
       'd-flex',
-      'f-just-content-center'
+      'f-just-content-center',
+      'f-align-items-center'
     ].join(' ');
 
     this.$container = $container

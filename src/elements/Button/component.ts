@@ -27,9 +27,7 @@ class Button implements ButtonInterface {
     const $button = document.createElement('button');
 
     $button.className = [
-      styles.button, 
-      'width-169',
-      'height-22'
+      styles.button
     ].join(' ');
 
     $button.addEventListener('click', () => this.handleClick());

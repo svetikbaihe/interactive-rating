@@ -1,21 +1,15 @@
+.input_radio_wrapper {
+  @apply flex w-full justify-between;
+}
+
+.input_radio {
+  @apply hidden;
+}
+
 .input_radio:checked + .radio_label {
-  background-color: white;
-  color: hsl(216, 12%, 8%);
+  @apply bg-white text-dark-void;
 }
 
 .radio_label {
-  color: hsl(217, 12%, 63%);
-  border-radius: 50%;
-  background-color: hsl(216, 17%, 23%);
-  padding-top: 17px;
-
-  &:hover {
-    color: hsl(216, 12%, 8%);
-    background-color: hsl(25, 97%, 53%);
-  }
-
-  &:active {
-    background-color: hsl(0, 0%, 100%);
-    color: hsl(216, 12%, 8%)
-  }
+  @apply text-light-grey rounded-full bg-dark-blue pt-[1em] w-[43px] h-[43px] inline-block pl-[1.3em] hover:text-dark-void hover:bg-orange active:bg-white active:text-dark-void text-[1.4rem] md:w-[50px] md:h-[50px] md:pt-[1.2em] md:pl-[1.5em];
 }

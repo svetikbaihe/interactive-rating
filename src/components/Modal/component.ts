@@ -52,11 +52,7 @@ class Modal implements ModalInterface {
     const $overlay = document.createElement('div');
 
     $overlay.className = [
-      styles.overlay,
-      'd-flex',
-      'f-just-content-center',
-      'wd-100vw',
-      'hg-100vh'
+      styles.overlay
     ].join(' ');
 
     $overlay.appendChild(this.buildModal());
@@ -74,15 +70,7 @@ class Modal implements ModalInterface {
     const $modal = document.createElement('div');
 
     $modal.className = [
-      styles.modal,
-      'maxwd-208',
-      'maxhg-208',
-      'padd-18',
-      'd-flex',
-      'flex-direction-column',
-      'f-align-items-center',
-      'gap-9',
-      'marg-t-60'
+      styles.modal
     ].join(' ');
 
     $modal.appendChild(this.buildModalTitle());
@@ -95,17 +83,13 @@ class Modal implements ModalInterface {
     const $modalTitleWrapper = document.createElement('div');
 
     $modalTitleWrapper.className = [
-      styles.modal_title_wrapper,
-      'd-flex',
-      'flex-direction-column',
-      'gap-15'
+      styles.modal_title_wrapper
     ].join(' ');
 
     const $titleImg = document.createElement('img');
 
     $titleImg.className = [
-      styles.title_img,
-      'width-84'
+      styles.title_img
     ].join(' ');
 
     $titleImg.setAttribute('src', '/icons/illustration-thank-you.svg');
@@ -113,8 +97,7 @@ class Modal implements ModalInterface {
     const $modalSubTitle = document.createElement('h2');
 
     $modalSubTitle.className = [
-      styles.modal_sub_title,
-      'padd-4'
+      styles.modal_sub_title
     ].join(' ');
 
     $modalSubTitle.innerText = `You selected ${this.extraValue} out of 5`;
@@ -122,8 +105,7 @@ class Modal implements ModalInterface {
     const $modalTitle = document.createElement('h1');
 
     $modalTitle.className = [
-      styles.modal_title,
-      'marg-t-5'
+      styles.modal_title
     ].join(' ');
 
     if(this.title) {

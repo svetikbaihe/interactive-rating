@@ -30,10 +30,7 @@ class InputRadio implements InputRadioInterface {
     const $inputRadioWrapper = document.createElement('div');
 
     $inputRadioWrapper.className = [
-      styles.input_radio_wrapper,
-      'd-flex',
-      'width-169',
-      'f-just-content-space-between'
+      styles.input_radio_wrapper
     ].join(' ');
 
     this.values.forEach(value => {
@@ -41,8 +38,7 @@ class InputRadio implements InputRadioInterface {
       const $inputRadio = document.createElement('input');
    
       $inputRadio.className = [
-        styles.input_radio,
-        'd-none'
+        styles.input_radio
       ].join(' ');
 
       $inputRadio.setAttribute('type', 'radio');
@@ -58,11 +54,7 @@ class InputRadio implements InputRadioInterface {
       const $inputRadioLabel = document.createElement('label');
 
       $inputRadioLabel.className = [
-        styles.radio_label,
-        'width-22',
-        'height-22',
-        'd-inline-block',
-        'padd-l-9'
+        styles.radio_label
       ].join(' ');
 
       $inputRadioLabel.setAttribute('for', `id-${this.name}-${value}`);

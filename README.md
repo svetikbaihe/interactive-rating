@@ -42,11 +42,12 @@ Users should be able to:
 ### Built with
 
 - HTML5 markup
-- SASS
+- SCSS/SASS
 - Tailwind
 - Flexbox
 - Mobile-first workflow
 - OOP
+- Typescript
 - Vite
 
 ### What I learned

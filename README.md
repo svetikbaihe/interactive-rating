@@ -34,8 +34,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/svetikbaihe/interactive-rating.git)
-- Live Site URL: [Add live site URL here](https://interactive-rating-asx9ezi7h-svetas-projects-dd4a3c95.vercel.app/)
+- Solution URL: [GitHub](https://github.com/svetikbaihe/interactive-rating.git)
+- Live Site URL: [Vercel](https://interactive-rating-asx9ezi7h-svetas-projects-dd4a3c95.vercel.app/)
 
 ## My process
 

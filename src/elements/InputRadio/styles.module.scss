@@ -11,5 +11,7 @@
 }
 
 .radio_label {
-  @apply text-light-grey rounded-full bg-dark-blue pt-[1em] w-[43px] h-[43px] inline-block pl-[1.3em] hover:text-dark-void hover:bg-orange active:bg-white active:text-dark-void text-[1.4rem] md:w-[50px] md:h-[50px] md:pt-[1.2em] md:pl-[1.5em];
+  @apply text-light-grey rounded-full bg-dark-blue pt-[1em] w-[43px] h-[43px] inline-block pl-[1.3em];
+  @apply hover:text-dark-void hover:bg-orange active:bg-white active:text-dark-void text-[1.4rem] md:w-[50px];
+  @apply md:h-[50px] md:pt-[1.2em] md:pl-[1.5em] hover:cursor-pointer;
 }
